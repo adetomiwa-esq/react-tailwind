@@ -1,20 +1,20 @@
 import React from 'react';
 import Task from './Task';
 
-function TaskList({taskArray}) {
+function TaskList({taskArray, setTaskArray}) {
   return (
-    <div>
+    <ul className='my-8 mx-5'>
         {
             taskArray.map(eachTask => {
               return  <Task 
                     text={eachTask.text}
                     key={eachTask.id}
                     eachTask={eachTask}
-                    id={eachTask.id}
+                    setTaskArray={setTaskArray}
                 />
             })
         }
-    </div>
+    </ul>
   )
 }
 

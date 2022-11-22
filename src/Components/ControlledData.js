@@ -10,7 +10,7 @@ function ControlledData() {
     console.log(taskArray)
 
   return (
-    <div>
+    <div className='border-2 w-9/12'>
         <FormInput 
             setFreshTask={setFreshTask}
             freshTask={freshTask}
@@ -19,6 +19,7 @@ function ControlledData() {
         {freshTask}
         <TaskList 
           taskArray={taskArray}
+          setTaskArray={setTaskArray}
         />
     </div>
   )

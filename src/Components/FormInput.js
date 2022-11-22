@@ -19,15 +19,15 @@ function FormInput({setFreshTask, freshTask, setTaskArray}) {
   }
   return (
     <div>
-        <div className='relative w-72 h-8'>
+        <div className='relative w-8/12 h-8'>
           <input 
               type='text'
-              className='border-gray-800 border w-72 h-full'
+              className='border-gray-800 border w-full h-full'
               onChange={updateInput}
               value={freshTask}
           />
 
-          <div onClick={addTaskToArray} className='text-red-600 absolute -right-0 top-0 border-red-600 border h-full w-1/12 flex items-center justify-center'>
+          <div onClick={addTaskToArray} className='text-slate-50 absolute -right-6 top-0 border-red-600 border h-full w-1/12 flex items-center justify-center bg-red-500 font-extrabold text-xl'>
             <i>
               <AiOutlinePlus />
             </i>
