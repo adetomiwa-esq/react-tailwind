@@ -19,10 +19,10 @@ function FormInput({setFreshTask, freshTask, setTaskArray}) {
   }
   return (
     <div>
-        <div className='relative w-8/12 h-8'>
+        <div className='relative w-8/12 h-8 m-auto'>
           <input 
               type='text'
-              className='border-gray-800 border w-full h-full'
+              className='border-gray-800 border w-full h-full outline-none'
               onChange={updateInput}
               value={freshTask}
           />
